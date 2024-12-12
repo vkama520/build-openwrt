@@ -30,7 +30,7 @@ sed -i 's/192.168.1.1/192.168.10.128/g' package/base-files/files/bin/config_gene
 #
 # Add luci-app-amlogic
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
-svn co https://github.com/vernesong/OpenClash.git  package/openclash
+svn co https://github.com/vernesong/OpenClash.git  package/OpenClash
 
 # Fix runc version error
 # rm -rf ./feeds/packages/utils/runc/Makefile
