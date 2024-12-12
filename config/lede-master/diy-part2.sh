@@ -29,8 +29,8 @@ sed -i 's/192.168.1.1/192.168.10.128/g' package/base-files/files/bin/config_gene
 # ------------------------------- Other started -------------------------------
 #
 # Add luci-app-amlogic
-svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
-svn co https://github.com/vernesong/OpenClash.git  package/OpenClash
+echo 'src-git amlogic https://github.com/ophub/luci-app-amlogic' >>feeds.conf.default
+echo 'src-git OpenClash https://github.com/vernesong/OpenClash' >>feeds.conf.default
 
 # Fix runc version error
 # rm -rf ./feeds/packages/utils/runc/Makefile
